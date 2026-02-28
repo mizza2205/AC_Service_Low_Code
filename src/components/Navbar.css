@@ -69,19 +69,12 @@
   display: none;
 }
 
-
-
-/* ============================= */
 /*           MOBILE VIEW         */
-/* ============================= */
-
-/* MOBILE MENU HIDDEN BY DEFAULT (ONLY ON MOBILE) */
-/* MOBILE MENU HIDDEN BY DEFAULT (ONLY ON MOBILE) */
 @media (max-width: 1024px) {
-  
-  .menu-icon {
+  .menu-icon
+   {
     display: block;
-  }
+    }
 
   /* DESKTOP MENU HIDE IN MOBILE */
   .nav-links {
@@ -137,3 +130,5 @@
     display: block;
   }
 }
+
+                                      /* NAVBAR CSS END */

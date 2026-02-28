@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
+/////////////////////START NAVBAR/////////////////////////////////////////////////
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -39,5 +40,31 @@ const Navbar = () => {
     </nav>
   );
 };
+
+//////////////////////////END NAVBAR DESIGN////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export default Navbar;

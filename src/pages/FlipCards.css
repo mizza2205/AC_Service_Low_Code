@@ -1,0 +1,62 @@
+.flip-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding:10px 196px 10px 196px
+}
+
+.flip-card {
+  width: 270px;
+  height: 330px;
+  perspective: 1000px;
+}
+
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.flip-front {
+  background: #1F2A60;
+  color: #4ECFEA;
+  text-align: center;
+}
+
+.flip-front img {
+  width: 120px;
+  height: 68px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.flip-back {
+  background: orange;
+  color: #000;
+  padding: 25px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+.flip-heading {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #222;
+  font-weight: 600;
+}

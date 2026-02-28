@@ -1,0 +1,81 @@
+/* Slider Section Background */
+.slider-section {
+  background: #182550;
+  padding: 50px 20px 50px 20px;
+  height: 100%;
+}
+
+/* Whole Slide Wrapper */
+.slide-wrapper {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Left Side */
+.slide-left {
+  width: 50%;
+  
+}
+
+.subtitle {
+  color: #c3bebe;
+  margin-bottom: 10px;
+}
+
+.title {
+  color: #58e0ff;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.text {
+  color: #d9d9d9;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #64eaff;
+  color: black;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Right Side */
+.slide-right {
+  width: 50%;
+}
+
+.slide-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slide-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .slide-left,
+  .slide-right {
+    width: 100%;
+  }
+}
+
+                    /* ABOUT US SECTION CSS */
+.about-section{
+    padding: 50px 50px 50px 50px;
+   }  
+.about-img {
+    width: 80%;
+    margin-top: 50px;
+}                  
