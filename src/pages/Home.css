@@ -19,25 +19,21 @@
   width: 50%;
   
 }
-
 .subtitle {
   color: #c3bebe;
   margin-bottom: 10px;
 }
-
 .title {
   color: #58e0ff;
   font-size: 35px;
   margin-bottom: 15px;
 }
-
 .text {
   color: #d9d9d9;
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
-
 .btn {
   background: #64eaff;
   color: black;
@@ -47,31 +43,29 @@
   cursor: pointer;
   font-weight: 600;
 }
-
 /* Right Side */
 .slide-right {
   width: 50%;
 }
-
 .slide-img {
   width: 100%;
   border-radius: 10px;
 }
-
 /* Responsive */
 @media (max-width: 768px) {
   .slide-wrapper {
     flex-direction: column;
     text-align: center;
   }
-
   .slide-left,
   .slide-right {
     width: 100%;
   }
 }
+/* SLIDER SECTION CSS END*/
 
-                    /* ABOUT US SECTION CSS */
+/* ABOUT US SECTION CSS */
+
 .about-section{
     padding: 50px 50px 50px 50px;
    }  
@@ -79,3 +73,151 @@
     width: 80%;
     margin-top: 50px;
 }                  
+/* ABOUT US SECTION CSS END */
+
+/* FLIP CARDS CSS*/
+
+.flip-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding:10px 150px 10px 150px
+}
+
+.flip-card {
+  width: 270px;
+  height: 330px;
+  perspective: 1000px;
+}
+
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.flip-front {
+  background: #1F2A60;
+  color: #4ECFEA;
+  text-align: center;
+}
+
+.flip-front img {
+  width: 120px;
+  height: 68px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.flip-back {
+  background: orange;
+  color: #000;
+  padding: 25px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+.flip-heading {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #000;
+  font-weight: 600;
+}
+.flip-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.flip-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* FLIP CARDS CSS END*/
+
+/* COUNTER SECTION CSS START */
+.counter-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 0;
+  background-color: #A6A6A6;
+}
+
+.counter-box {
+  background: #fff;
+  padding: 10px 33px 10px 33px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0 ,0 ,0 ,0.1);
+  border: 2px solid black;
+}
+
+.counter-box h2 {
+  font-weight: 700;
+  color: #1E2A5A;
+}
+
+.counter-box p {
+  font-size: 20px;
+  color: #1E2A5A;
+  margin-top: 10px;
+}
+/* COUNTER SECTION  CSS END */
+
+/* SERVICE SECTION  CSS START */
+.service-container{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding:10px 200px 10px 200px;
+}
+.service-card{
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+.service-card img{
+  width: 100%;
+  border-radius: 50px;
+}
+.service-card ,h3{
+  text-align: center;
+}
+.service-card , p{
+  text-align: justify;
+  margin-top: 20px;
+}
+.service-btn{
+  padding: 10px 20px;
+  background: #071c58;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.service-btn:hover{
+  background: #4ECFEA;
+  color:#000
+}
+/* SERVICE SECTION  CSS END */
